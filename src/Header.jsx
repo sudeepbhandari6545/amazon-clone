@@ -8,15 +8,11 @@ const Header = () => {
     <div className="header">
       <img
         className="header_logo"
-        src="https://logo-logos.com/wp-content/uploads/2016/12/Amazon_logo.png"
+        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
       />
       {/* Header search */}
       <div className="header_search">
-        <input
-          className="header_input"
-          type="text"
-          placeholder="it's working"
-        />
+        <input className="header_input" type="text" />
         <SearchIcon className="header_searchicon" />
       </div>
       {/* header navs */}
