@@ -12,15 +12,26 @@ const Home = () => {
           alt=""
         />
         <div className="home_row">
+          <Product
+            title="sudeep bhandari"
+            price="39.99"
+            image="https://images-na.ssl-images-amazon.com/images/I/6182S7MYC2L._AC_UL320_SR320,320_.jpg"
+            rating={5}
+          />
           <Product />
+
           {/* product */}
         </div>
         <div className="home_row">
           {/* product */}
-          {/* product */}
-          {/* product */}
+          <Product />
+          <Product />
+          <Product />
         </div>
-        <div className="home_row">{/* product */}</div>
+        <div className="home_row">
+          {/* product */}
+          <Product />
+        </div>
       </div>
     </div>
   );
