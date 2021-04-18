@@ -20,7 +20,7 @@ const Subtotal = () => {
         value={0}
         displayType={'text'}
         thousandSeparator={true}
-        prefex={''}
+        prefex={'$'}
       />
       <button>Proceed to Checkout</button>
     </div>
