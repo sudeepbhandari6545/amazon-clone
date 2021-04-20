@@ -18,7 +18,7 @@ const Checkoutproduct = ({ image, title, price, ratting }) => {
               <p>⭐</p>
             ))}
         </div>
-        <button>Remove from Basket</button>
+        <button onClick={removeFromBasket}>Remove from Basket</button>
       </div>
     </div>
   );
