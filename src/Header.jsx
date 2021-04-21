@@ -25,10 +25,12 @@ const Header = () => {
       {/* header navs */}
       <div className="header_nav">
         {/* nav first */}
-        <div className="header_nav_option">
-          <span className="header_nav_one">Hello guest</span>
-          <span className="header_nav_two">Sign In</span>
-        </div>
+        <Link to="/login">
+          <div className="header_nav_option">
+            <span className="header_nav_one">Hello guest</span>
+            <span className="header_nav_two">Sign In</span>
+          </div>
+        </Link>
         {/* nav second */}
         <div className="header_nav_option">
           <span className="header_nav_one">Return</span>
