@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const signIn = (e) => {
+    e.preventDefult();
+    // some fancy firebase login
+  };
+  const register = (e) => {
+    e.preventDefult();
+    // some fancy firebase register
+  };
   return (
     <div className="login">
       <Link to="/">
@@ -16,13 +26,29 @@ const Login = () => {
         <h1>Login</h1>
         <form>
           <h5>Email</h5>
-          <input type="text" />
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <h5>Password</h5>
-          <input type="password" />
-          <button className="login_signin_button">sign-in</button>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button
+            type="submit"
+            onClick={signIn}
+            className="login_signin_button"
+          >
+            sign-in
+          </button>
         </form>
         <p>please read and agree terms and condition</p>
-        <button className="login_register_button">Create Account</button>
+        <button onClick={register} className="login_register_button">
+          Create Account
+        </button>
       </div>
     </div>
   );
