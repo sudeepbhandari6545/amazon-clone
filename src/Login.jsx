@@ -13,16 +13,16 @@ const Login = () => {
         />
       </Link>
       <div className="login_container">
-        <h3>Login</h3>
+        <h1>Login</h1>
         <form>
           <h5>Email</h5>
           <input type="text" />
           <h5>Password</h5>
           <input type="password" />
-          <button>sign-in</button>
+          <button className="login_signin_button">sign-in</button>
         </form>
         <p>please read and agree terms and condition</p>
-        <button>Create Account</button>
+        <button className="login_register_button">Create Account</button>
       </div>
     </div>
   );
