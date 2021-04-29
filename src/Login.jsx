@@ -9,6 +9,10 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const signIn = (e) => {
     e.preventDefault();
+
+    auth.signInWithEmailAndPassword(email, password).then((auth) => {
+      history.push('/');
+    });
     // some fancy firebase login
   };
   const register = (e) => {
